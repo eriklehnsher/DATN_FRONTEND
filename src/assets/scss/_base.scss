@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+
+}
+
+body {
+    color: black;
+    height: auto;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+
+    h1 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+* {
+    font-family: "Sanomat Sans","Encode Sans Expanded",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+}
+
+//? set margin-size
+$sizes: 4px,45px,35px,95px, 8px, 10px, 12px, 14px, 16px, 18px, 20px, 22px, 24px, 32px, 40px, 48px, 60px, 80px,90px, 100px, 150px, 200px;
+
+@each $size in $sizes {
+    .p-#{$size} {
+        padding: $size !important;
+    }
+
+    .py-#{$size} {
+        padding-top: $size !important;
+        padding-bottom: $size !important;
+    }
+
+    .pr-#{$size} {
+        padding-right: $size !important;
+    }
+
+    .px-#{$size} {
+        padding-left: $size !important;
+        padding-right: $size !important;
+    }
+
+    .pt-#{$size} {
+        padding-top: $size !important;
+    }
+
+    .mb-#{$size} {
+        margin-bottom: $size !important;
+    }
+
+    .mt-#{$size} {
+        margin-top: $size !important;
+    }
+
+    .mr-#{$size} {
+        margin-right: $size !important;
+    }
+
+    .ml-#{$size} {
+        margin-left: $size !important;
+    }
+
+    .gap-#{$size} {
+        gap: $size !important;
+    }
+
+    .max-width-#{$size} {
+        max-width: $size !important;
+    }
+
+    .min-width-#{$size} {
+        min-width: $size !important;
+    }
+
+    .width-#{$size} {
+        width: $size !important;
+    }
+
+    .height-#{$size} {
+        height: $size !important;
+    }
+
+}
+.width-33{
+    width: 33%;
+}
+
+.width-50{
+    width: 50%;
+}
+.pointer {
+    cursor: pointer;
+}
+
+// set all links 
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+
+//flex 
+@each $size in $sizes {
+    .d-flex-#{$size} {
+        display: flex;
+        gap: #{$size};
+        align-items: center;
+    }
+}
+
+i {
+    margin-left: 5px;
+    margin-right: 8px;
+
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+//? Text
+$font_sizes: 12, 14, 16, 18, 20, 22, 24, 25, 32, 40;
+$line_heights: 14, 16, 17, 18, 19, 20, 22, 21, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34;
+$font_weights: 400, 500, 600, 700, 800, 900;
+
+@each $i in $font_sizes {
+    @each $j in $line_heights {
+        @each $k in $font_weights {
+            .text-#{$i}-#{$j}-#{$k} {
+                font-family: 'Public Sans';
+                font-style: normal;
+                font-size: #{$i}px;
+                line-height: #{$j}px;
+                font-weight: #{$k};
+            }
+        }
+    }
+}
+
+.b-sidebar{
+    width: 400px !important;
+}
+.btn-sm{
+    height: 32px !important;
+}

@@ -1,0 +1,194 @@
+.car-form__button--modal {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+
+    &:hover {
+        color: green;
+        border-color: green;
+    }
+}
+
+
+
+.modal-content {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.modal-header {
+
+
+    justify-content: center;
+
+    .modal-title {
+        margin: 25px 0px 25px;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: inherit;
+    }
+}
+
+.car-form--title {
+    color: #141414;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.car-form--title__warn {
+    color: red;
+}
+
+.car-form__detail--input {
+
+    margin-bottom: 25px;
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgb(200, 221, 200);
+    border-radius: 2px;
+
+}
+
+.car-form__detail {
+    width: 48%;
+}
+
+.col-form-label {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: inherit;
+    color: #141414;
+}
+
+.car-form__feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.car-form__requirements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.custom-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label.custom-control-label {
+    margin-left: 5px;
+    width: 100%;
+    font-size: 12px;
+}
+
+
+.car-form__feature--img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 4%;
+        margin-right: 20px;
+    }
+
+}
+
+.car-form__mortgage {
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgb(200, 221, 200);
+    border-radius: 2px;
+}
+
+.car-form__price {
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgb(200, 221, 200);
+    border-radius: 2px;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    button {
+        border-radius: 2px;
+        width: 48%;
+
+        .btn-primary {
+            background-color: green;
+        }
+    }
+}
+
+// map
+
+.car-form__detail--map {
+    width: 48%;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: inherit;
+    color: #141414;
+
+}
+
+.car-form__detail--mapSelect {
+    margin: 0px 5px 0px 5px;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid grey;
+
+}
+
+.car-form__dettail--select {
+    height: 50px;
+    border: 2px solid grey;
+}
+
+.car-form__detail--inputMap {
+    margin-top: 20px;
+    width: 48%;
+    margin-right: 10px;
+}
+
+.label__carImg {
+    background-color: gray;
+    color: white;
+    width: 100px;
+    height: 24px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.listGroup__uploadsImg {}
+
+.listGroup__uploadsImg--item {
+    width: 30%;
+    border: none;
+    display: flex;
+
+    img {
+        width: 50%;
+    }
+
+    .listGroup__uploadsImg--itemButton {
+        margin-bottom: 3px;
+        width: 5%;
+        border-radius: 2px;
+        border: 2px;
+    }
+}

@@ -1,0 +1,171 @@
+.header {
+  font-size: 15px;
+  color: $white;
+  background-color: $black;
+  font-family: "Sanomat Sans", "Encode Sans Expanded", -apple-system, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  .header__logo--text {
+    text-decoration: none;
+    color: $white;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    right: 50px;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.header__info {
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.header__vendor {
+  a {
+    color: white;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.header__portfolio {
+  background-color: black;
+}
+.header__infoAuth {
+  font-size: 17px;
+  .header__infoAuth--login {
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  .header__infoAuth--register{
+    border: 1px solid white;
+    border-radius: 3px;
+    .header__infoAuth--register-button{
+      padding: 10px;
+    }
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.dropdown {
+  button {
+    background-color: #000000;
+    border-color: #00a550;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  button:hover {
+    background-color: black;
+    color: #00a550;
+  }
+}
+.dropdown-menu {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.864);
+}
+.dropdown-item {
+  a {
+    color: #fff;
+    font-family: inherit;
+  }
+  a:hover {
+    color: black;
+  }
+}
+
+// // .header__portfolio--dropdownMenu {
+// //   width: 200px;
+// //   height: auto;
+// //   color: black;
+// // }
+// nav {
+//   width: AUTO;
+//   background-color: black;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// nav .menu-item {
+//   color: #fff;
+//   position: relative;
+//   text-align: center;
+//   display: flex;
+//   transition: 0.4s;
+// }
+
+// nav .menu-item.active,
+// nav .menu-item:hover {
+//   background-color: black;
+//   border-bottom-color: #bb3030;
+// }
+
+// nav .menu-items a {
+//   color: inherit;
+//   text-decoration: none;
+//   width: 300%;
+//   outline: 0;
+//   outline-color: initial;
+//   outline-style: initial;
+//   outline-width: 0px;
+// }
+
+// nav .menu-item svg {
+//   width: 10px;
+//   margin-left: 10px;
+// }
+
+// nav .menu-item .sub-menu {
+//   position: absolute;
+//   z-index: 1;
+//   background-color: black;
+//   top: calc(100% + 17px);
+//   left: -50%;
+//   transform: translateX(-50%);
+//   width: 200px;
+//   border-radius: 2px;
+//   border-top: 2px solid #00a550;
+// }
+
+// nav .menu-item .sub-menu .menu-items:hover {
+//   background-color: #222;
+// }
+
+// nav .menu-item .sub-menu .menu-items {
+//   padding: 12px 20px;
+//   line-height: 20px;
+//   color: #fff;
+// }
+
+// .fade-enter-active,
+// .fade-leave-active {
+//   transition: all 0.5s ease-out;
+// }
+
+// .fade-enter,
+// .fade-leave-to {
+//   opacity: 0;
+// }
+
+// .sub-menu {
+//   cursor: pointer;
+// }
+
+// .menu-items__router {
+//   width: 200%;
+// }
